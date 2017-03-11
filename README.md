@@ -1,7 +1,5 @@
-# node-reveal
+# node-reveal [![NPM version][npm-image]][npm-url]
 Node CLI for reveal.js
-
-[![NPM version][npm-image]][npm-url]
 
 ## Usage
 
@@ -16,14 +14,17 @@ Options:
 
 ```
 
- - Strict method
-   - Init project: `reveal -i <your_project_name>`
-   - Go to project directory: `cd <your_project_name>`
-   - Server with watch: `reveal -w`
- - Quick method
-   - Init project with default name: `reveal`
-   - Go to project directory: `cd reveal-demo`
-   - Server with watch: `reveal`
+### Start
+
+  - Init project: `reveal -i <your_project_name>`
+  - Go to project directory: `cd <your_project_name>`
+  - Server in watch mode: `reveal -w`
+
+### Quick start :heart:
+
+  - Init project with default name: `reveal`
+  - Go to project directory: `cd reveal-demo`
+  - Server in watch mode: `reveal`
 
 ## GIF show
 
@@ -34,4 +35,4 @@ MIT
 
 
 [npm-url]: https://npmjs.org/package/node-reveal
-[npm-image]: https://img.shields.io/npm/v/node-reveal.svg
+[npm-image]: https://img.shields.io/npm/v/node-reveal.svg?style=flat-square
