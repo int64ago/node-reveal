@@ -27,6 +27,7 @@
   "homepage": "https://github.com/int64ago/node-reveal#readme",
   "dependencies": {
     "browser-sync": "^2.18.8",
+    "chalklog": "^1.1.2",
     "fs-extra": "^2.0.0",
     "node-watch": "^0.4.1",
     "yargs": "^7.0.2"
