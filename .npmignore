@@ -1,0 +1,7 @@
+reveal.js/test/
+reveal.js/.gitignore
+reveal.js/demo.html
+reveal.js/*.json
+reveal.js/*.md
+reveal.js/*.yml
+reveal.js/*.js

@@ -7,6 +7,13 @@ const { copySync, existsSync } = require('fs-extra');
 const log = new Logger('reveal');
 const cwd = process.cwd();
 
+const copyFilter = function(file) {
+  const ignores = [/README\.md$/, /LICENSE$/, /package\.json$/];
+  return !ignores.some(function(reg) {
+    return reg.test(file)
+  })
+}
+
 const watch = function() {
   bs.init({ server: cwd });
   nw(cwd, function(file) {
@@ -27,7 +34,9 @@ const init = function(dir) {
     return true;
   }
 
-  copySync(path.join(__dirname, '../reveal.js'), path.join(cwd, dir));
+  copySync(path.join(__dirname, '../reveal.js'), path.join(cwd, dir), {
+    filter: copyFilter
+  });
   log.green(`Init the project in: <${dir}>`);
   return true;
 }
