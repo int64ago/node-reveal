@@ -1,6 +1,6 @@
 {
   "name": "node-reveal",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Node CLI for reveal.js",
   "bin": {
     "reveal": "index.js"
