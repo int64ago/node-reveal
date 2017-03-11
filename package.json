@@ -2,13 +2,16 @@
   "name": "node-reveal",
   "version": "0.0.1",
   "description": "Node CLI for reveal.js",
-  "main": "index.js",
+  "bin": {
+    "reveal": "index.js"
+  },
+  "preferGlobal": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/int64ago/node-reveal.git"
+    "url": "https://github.com/int64ago/node-reveal.git"
   },
   "keywords": [
     "node",
@@ -21,5 +24,11 @@
   "bugs": {
     "url": "https://github.com/int64ago/node-reveal/issues"
   },
-  "homepage": "https://github.com/int64ago/node-reveal#readme"
+  "homepage": "https://github.com/int64ago/node-reveal#readme",
+  "dependencies": {
+    "browser-sync": "^2.18.8",
+    "fs-extra": "^2.0.0",
+    "node-watch": "^0.4.1",
+    "yargs": "^7.0.2"
+  }
 }
