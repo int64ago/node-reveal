@@ -14,13 +14,13 @@ Options:
 
 ```
 
-### Start
+#### Start
 
   - Init project: `reveal -i <your_project_name>`
   - Go to project directory: `cd <your_project_name>`
   - Server in watch mode: `reveal -w`
 
-### Quick start :heart:
+#### Quick start :heart:
 
   - Init project with default name: `reveal`
   - Go to project directory: `cd reveal-demo`
