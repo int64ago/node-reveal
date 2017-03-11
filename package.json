@@ -26,6 +26,7 @@
     "browser-sync": "^2.18.8",
     "chalklog": "^1.1.2",
     "fs-extra": "^2.0.0",
+    "node-fetch": "^1.6.3",
     "node-watch": "^0.4.1",
     "yargs": "^7.0.2"
   }

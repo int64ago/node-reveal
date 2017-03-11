@@ -1,9 +1,15 @@
 # node-reveal [![NPM version][npm-image]][npm-url]
-Node CLI for reveal.js
+Node CLI for [reveal.js](https://github.com/hakimel/reveal.js)
+
+## Feature
+
+ - Fast and simple, almost one command
+ - ONLY generate necessary files
+ - Enable multiplex by default
 
 ## Usage
 
-`npm i node-reveal -g` / `yarn global add node-reveal`
+`npm i node-reveal -g` (or `yarn global add node-reveal`)
 
 ```text
 $ reveal -h
