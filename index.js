@@ -18,8 +18,12 @@ const builder = {
 }
 
 const argv = yargs
-  .help('h')
   .options(builder)
+  .help('h')
+  .alias('h', 'help')
+  .alias('v', 'version')
+  .describe('v', 'Show version')
+  .version(() => require('./package').version)
   .argv
 
 
