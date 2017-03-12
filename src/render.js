@@ -28,8 +28,8 @@ module.exports = function(title, callback) {
   fetchToken(function(err, json) {
     if (err) return callback(err);
 
-    const extraHTML = path.join(__dirname, '../extra/index.html');
-    const html = readFileSync(extraHTML, 'utf-8');
+    const tplHTML = path.join(__dirname, '../template/index.html');
+    const html = readFileSync(tplHTML, 'utf-8');
 
     return callback(null, tplEngine(html, {
       title: title,
