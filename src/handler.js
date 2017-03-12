@@ -27,8 +27,6 @@ const watch = function() {
 const init = function(dir, callback) {
   const curHTML = path.join(cwd, 'index.html');
   const destHTML = path.join(cwd, dir, 'index.html');
-  const sourceDir = path.join(__dirname, '../reveal.js');
-  const destDir = path.join(cwd, dir);
 
   if (existsSync(curHTML)) {
     log.yellow('Seems already initialized.');
@@ -40,9 +38,13 @@ const init = function(dir, callback) {
     return callback(true);
   }
 
-  copySync(sourceDir, destDir, {
+  // Copy reveal resources
+  copySync(path.join(__dirname, '../reveal.js'), path.join(cwd, dir), {
     filter: copyFilter
   });
+
+  // Copy extra resources
+  copySync(path.join(__dirname, '../assets'), path.join(cwd, dir, 'assets'));
 
   render(dir, function(err, html) {
     if (err) {
