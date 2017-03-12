@@ -2,7 +2,7 @@ const bs = require('browser-sync').create();
 const nw = require('node-watch');
 const path = require('path');
 const Logger = require('chalklog');
-const { copySync, existsSync, writeFileSync } = require('fs-extra');
+const { copySync, existsSync, removeSync, writeFileSync } = require('fs-extra');
 const render = require('./render');
 
 const log = new Logger('reveal');
@@ -49,6 +49,7 @@ const init = function(dir, callback) {
   render(dir, function(err, html) {
     if (err) {
       log.red(`ERROR: ${err}`);
+      removeSync(path.join(cwd, dir));
       return callback(true);
     }
     writeFileSync(destHTML, html, 'utf-8');
