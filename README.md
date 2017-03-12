@@ -1,10 +1,13 @@
 # node-reveal [![NPM version][npm-image]][npm-url]
 Node CLI for [reveal.js](https://github.com/hakimel/reveal.js)
 
+[A Real DEMO](https://github.com/int64ago/wasm)
+
 ## Feature
 
  - Fast and simple, almost one command
  - ONLY generate necessary files
+ - Server in watch mode, auto reload during editing
  - Enable multiplex by default
 
 ## Usage
@@ -14,9 +17,10 @@ Node CLI for [reveal.js](https://github.com/hakimel/reveal.js)
 ```text
 $ reveal -h
 Options:
-  -h           Show help                                               [boolean]
-  -i, --init   Create a new project.                    [default: "reveal-demo"]
-  -w, --watch  Server in watch mode.                            [default: false]
+  -i, --init     Create a new project.                  [default: "reveal-demo"]
+  -w, --watch    Server in watch mode.                          [default: false]
+  -h, --help     Show help                                             [boolean]
+  -v, --version  Show version number                                   [boolean]
 
 ```
 
@@ -34,7 +38,17 @@ Options:
 
 ## GIF show
 
-Coming...
+ - ONLY generate files needed
+![](https://cloud.githubusercontent.com/assets/2230882/23828880/15b6c702-071b-11e7-88ac-d9d8605773c5.gif)
+
+ - Create a project & server in watch mode
+![](https://cloud.githubusercontent.com/assets/2230882/23828879/15b638d2-071b-11e7-8cbe-13c7e4b45ffc.gif)
+
+ - Auto reload during editing
+![](https://cloud.githubusercontent.com/assets/2230882/23828882/15f63586-071b-11e7-9086-4c7ece9d7c83.gif)
+
+ - Enable multiplex in an elegant way
+![](https://cloud.githubusercontent.com/assets/2230882/23828881/15f56570-071b-11e7-9062-0c4ffbf1734f.gif)
 
 ## License
 MIT
