@@ -36,6 +36,13 @@ Options:
   - Go to project directory: `cd reveal-demo`
   - Server in watch mode: `reveal`
 
+## Tips
+
+ - ENOSPC error
+
+`node-reveal` uses `node-watch` under the hood, for the limit of OS, you need to increase watchers limit manually, see [this](https://github.com/yuanchuan/node-watch/issues/48) for detail.
+
+
 ## GIF show
 
  - ONLY generate files needed
