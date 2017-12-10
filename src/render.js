@@ -14,7 +14,7 @@ const tplEngine = function(html, data) {
 }
 
 const fetchToken = function(callback) {
-  fetch('https://reveal.302.at/token')
+  fetch('https://reveal-js-multiplex-ccjbegmaii.now.sh/token')
   .then(function(res) {
     return res.json();
   }).then(function(json) {
